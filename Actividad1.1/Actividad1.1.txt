@@ -1,0 +1,9 @@
+INICIO
+  LEER numero
+  SI (numero < 0) ENTONCES
+    (valorAbsoluto = numero * -1)
+  SI NO
+    (valorAbsoluto = numero)
+  FINSI
+  ESCRIBIR valorAbsoluto
+FIN
