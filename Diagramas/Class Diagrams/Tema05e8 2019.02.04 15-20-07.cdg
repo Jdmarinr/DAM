@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Tema05e8">
+  <ClassDiagramComponents>
+    <Class name="Numero" package="tema05e8" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="valor" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="int" name="_valor"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getValor" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Test" package="tema05e8" visibility="public" xPosition="342.0" yPosition="30.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="parOImpar" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Numero" name="n"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="tema05e8.Test" target="tema05e8.Numero" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

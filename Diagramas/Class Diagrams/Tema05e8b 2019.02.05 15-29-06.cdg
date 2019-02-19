@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Tema05e8b">
+  <ClassDiagramComponents>
+    <Class name="Modulo" package="tema05e8b" visibility="public" xPosition="573.0" yPosition="183.0">
+      <Fields>
+        <Field name="profesor" type="Profesor" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Profesor" name="_profesor"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getModulo" returnType="Modulo" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Profesor" package="" visibility="public" xPosition="885.0" yPosition="183.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Grado" package="" visibility="public" xPosition="285.0" yPosition="183.0">
+      <Fields>
+        <Field name="modulo" type="Modulo" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Modulo" name="_modulo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="String[]" visibility="public">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="" source="tema05e8b.Modulo" target="Profesor" sourceCardinality="1..*" targetCardinality="1..*"/>
+    <UseRelation name="" source="Grado" target="tema05e8b.Modulo" sourceCardinality="1..*" targetCardinality="1..*"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
